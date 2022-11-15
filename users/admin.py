@@ -64,6 +64,5 @@ class UserAdmin(BaseUserAdmin):
     ordering = ("email", "username")
     filter_horizontal = ()
 
-UserChangeForm
 admin.site.register(User, UserAdmin)
 admin.site.unregister(Group)
